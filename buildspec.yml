@@ -20,7 +20,7 @@ phases:
         - cd $STACK_DIR
         - cp stack_config_${STAGE}_deploy.json stack_config.json
         - pip install -r requirements.txt
-        - cdk bootstrap
+        - cdk bootstrap --debug
   build:
     commands:
         - cdk --require-approval never deploy ${NAME}-${STAGE}
