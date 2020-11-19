@@ -6,7 +6,6 @@ from aws_cdk import (
     core
 )
 
-
 class CdkSampleStack(core.Stack):
 
     def __init__(self, scope: core.Construct, id: str, **kwargs) -> None:
